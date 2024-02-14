@@ -43,3 +43,14 @@ The HaxBall Headless Host API, documented [here](https://github.com/haxball/haxb
 ---
 
 The project goal, therefore, encompasses not only the ease of managing and expanding rooms through the "sharedable" concept but also a commitment to code safety and quality by implementing strong type safety at all stages of application development.
+
+---
+
+## Project structure
+
+- [room-manager](https://github.com/SMALIE/haxdock/tree/main/manager#readme) - Manages room containers
+- [server](https://github.com/SMALIE/haxdock/tree/main/server#readme) - Backend server functionality
+- [website](https://github.com/SMALIE/haxdock/tree/main/website#readme) - Frontend web application
+- [rooms](https://github.com/SMALIE/haxdock/tree/main/website#readme) - Source code for haxball rooms
+
+
