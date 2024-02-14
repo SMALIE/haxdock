@@ -6,6 +6,13 @@
 
 ![Schema](https://media.discordapp.net/attachments/1159211106087215204/1207000323785490473/image.png?ex=65de0da6&is=65cb98a6&hm=dd888a0b504c51d04930cd0ecb1af24bdadeec674a5070872c59eb2fba968161&=&format=webp&quality=lossless&width=1810&height=888)
 
+## 📰 Project structure
+
+- [room-manager](https://github.com/SMALIE/haxdock/tree/main/manager#readme) - Manages room containers
+- [server](https://github.com/SMALIE/haxdock/tree/main/server#readme) - Backend server functionality
+- [website](https://github.com/SMALIE/haxdock/tree/main/website#readme) - Frontend web application
+- [rooms](https://github.com/SMALIE/haxdock/tree/main/rooms#readme) - Source code for haxball rooms
+
 ## ❓ Why
 
 - **Lack of Flexible Tools:** The project was born out of a lack of flexible solutions for creating rooms that are easy to use, scalable, and encourage code organization.
@@ -43,14 +50,4 @@ The HaxBall Headless Host API, documented [here](https://github.com/haxball/haxb
 ---
 
 The project goal, therefore, encompasses not only the ease of managing and expanding rooms through the "sharedable" concept but also a commitment to code safety and quality by implementing strong type safety at all stages of application development.
-
----
-
-## Project structure
-
-- [room-manager](https://github.com/SMALIE/haxdock/tree/main/manager#readme) - Manages room containers
-- [server](https://github.com/SMALIE/haxdock/tree/main/server#readme) - Backend server functionality
-- [website](https://github.com/SMALIE/haxdock/tree/main/website#readme) - Frontend web application
-- [rooms](https://github.com/SMALIE/haxdock/tree/main/rooms#readme) - Source code for haxball rooms
-
 
