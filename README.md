@@ -1,8 +1,12 @@
-# Welcome to HaxDock 👋
+# 👋 Welcome to HaxDock - scalable way for HaxBall Rooms
 
 ![](https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&align=center&titleAlign=center&fontSize=20&lineHeight=14&lineCount=2&theme=ayu&width=500&bg=%230B0E14&titleColor=%231c9eff&line1=typescript%2Ctypescript%2Cauto%3Breact%2Creact%2Cauto%3Bnestjs%2Cnestjs%2CE0234E&line2=graphql%2Cgraphql%2CE10098%3Bprisma%2Cprisma%2Cffffff%3Bmongodb%2Cmongodb%2Cauto%3Bdocker%2Cdocker%2Cauto%3B)
 
-## ❓Why
+## 💻 Project workflow
+
+![Schema](https://media.discordapp.net/attachments/1159211106087215204/1207000323785490473/image.png?ex=65de0da6&is=65cb98a6&hm=dd888a0b504c51d04930cd0ecb1af24bdadeec674a5070872c59eb2fba968161&=&format=webp&quality=lossless&width=1810&height=888)
+
+## ❓ Why
 
 - **Lack of Flexible Tools:** The project was born out of a lack of flexible solutions for creating rooms that are easy to use, scalable, and encourage code organization.
 - **Developer Community:** The desire to create a project that not only facilitates individual work but also fosters the exchange of experiences and collaboration within the developer community.
@@ -39,7 +43,3 @@ The HaxBall Headless Host API, documented [here](https://github.com/haxball/haxb
 ---
 
 The project goal, therefore, encompasses not only the ease of managing and expanding rooms through the "sharedable" concept but also a commitment to code safety and quality by implementing strong type safety at all stages of application development.
-
-## 💻 Project workflow
-
-![Schema](https://media.discordapp.net/attachments/1159211106087215204/1207000323785490473/image.png?ex=65de0da6&is=65cb98a6&hm=dd888a0b504c51d04930cd0ecb1af24bdadeec674a5070872c59eb2fba968161&=&format=webp&quality=lossless&width=1810&height=888)
