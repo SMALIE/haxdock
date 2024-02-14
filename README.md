@@ -51,6 +51,6 @@ The project goal, therefore, encompasses not only the ease of managing and expan
 - [room-manager](https://github.com/SMALIE/haxdock/tree/main/manager#readme) - Manages room containers
 - [server](https://github.com/SMALIE/haxdock/tree/main/server#readme) - Backend server functionality
 - [website](https://github.com/SMALIE/haxdock/tree/main/website#readme) - Frontend web application
-- [rooms](https://github.com/SMALIE/haxdock/tree/main/website#readme) - Source code for haxball rooms
+- [rooms](https://github.com/SMALIE/haxdock/tree/main/rooms#readme) - Source code for haxball rooms
 
 
