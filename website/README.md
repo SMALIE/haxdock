@@ -1,27 +1,55 @@
-# React + TypeScript + Vite
+# Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is the documentation for the "website," a React-based web application designed to display player rankings based on specific categories such as goals, points, wins, and losses. The project includes a visual representation of the website's structure in the form of a diagram. Please refer to the diagram below:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Website Diagram](https://media.discordapp.net/attachments/1159211106087215204/1208556007459131402/website.png?ex=65e3b67e&is=65d1417e&hm=1d1d86c275cd5e8f223a9a7fd2f66a42516d6b09e74b718d12a06595e64bcf99&=&format=webp&quality=lossless&width=1826&height=888)
 
-## Expanding the ESLint configuration
+## Purpose
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The primary purpose of the "website" is to present player rankings based on various categories. These categories may include but are not limited to:
 
-- Configure the top-level `parserOptions` property like this:
+- points
+- wins
+- defeats
+- games
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+The website provides a user-friendly interface for viewing and interacting with the player rankings in real-time.
+
+## Environment Variables
+
+Ensure you have the following environment variables set in your `.env` file:
+
+```
+VITE_API_URL=https://yourdomain.com/api
+VITE_GRAPHQL_URL=https://api.yourdomain.com/graphql
+VITE_STRIPE_PUBLIC=*stripe public key*
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Make sure to replace placeholders like `yourdomain.com` with your actual domain.
+
+## GraphQL Code Generation
+
+The project, along with the codegen script, generates a special gql folder. This folder contains automatically generated types that ensure proper type checking for mutations and other GraphQL operations. This feature enhances the development experience and helps prevent runtime errors related to GraphQL queries.
+
+## Getting Started
+
+Follow these steps to set up and run the project:
+
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+2. Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+## Scripts
+
+- `dev`: Start the development server.
+- `build`: Build the project for production.
+- `preview`: Preview the production build locally.
+- `codegen`: Run GraphQL code generation using the configuration specified in `codegen.ts`.
