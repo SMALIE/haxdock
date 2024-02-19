@@ -1,73 +1,55 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Backend
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Overview
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+This documentation provides information about the backend for the HaxDock project. The backend is implemented using NestJS, MongoDB as the database, Prisma for data access, and GraphQL for API queries and mutations. The purpose of the backend is to handle player-related operations, including authentication, player updates, and retrieving player data.
 
-## Description
+Follow these steps to set up and run the project:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-## Installation
+2. Run the development server:
+    ```bash
+    npm run start:dev
+    ```
 
-```bash
-$ npm install
-```
+Replace placeholders like `your_username`, `your_password`, `your_jwt_password`, and `your_jwt_secret` with your actual values.
 
-## Running the app
+## Purpose
 
-```bash
-# development
-$ npm run start
+The backend provides GraphQL endpoints for various player-related operations. The primary functionalities include:
 
-# watch mode
-$ npm run start:dev
+- User authentication (`authorization` query)
+- Player creation and update (`upsertPlayer` mutation)
+- Retrieving player room states (`roomsState` query)
+- Updating player information (`updatePlayer` mutation)
+- Updating room states (`updateRoomState` mutation)
+- Retrieving a list of players (`getPlayers` query)
 
-# production mode
-$ npm run start:prod
-```
+## Environment Variables
 
-## Test
+Ensure you have the following environment variables set in your `.env` file:
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+DATABASE_URL="mongodb+srv://your_username:your_password@cluster0.kq8ginl.mongodb.net/haxstars?retryWrites=true&w=majority"
+JWT_PASSWORD=your_jwt_password
+JWT_SECRET=your_jwt_secret
 ```
 
-## Support
+## Authentication
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Authentication is required for certain mutations and queries. The `AuthGuard` is used to ensure that only authenticated users can access protected endpoints.
 
-## Stay in touch
+## Scripts
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- `build`: Build the NestJS project.
+- `start`: Start the NestJS server.
+- `start:dev`: Start the server in development mode with watch.
+- `start:debug`: Start the server in debug mode with watch.
+- `start:prod`: Start the server in production mode.
+- `test`: Run Jest tests.
+- `test:watch`: Run Jest tests in watch mode.
+- `test:e2e`: Run end-to-end tests using Jest.
