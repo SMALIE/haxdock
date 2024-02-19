@@ -78,7 +78,7 @@ export default {
   container: {
     name: 'REAL_SOCCER',
     host: '192.158.1.38',
-  }
+  },
 
   room: {
     // haxball api configuration
