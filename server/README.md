@@ -20,8 +20,6 @@ Follow these steps to set up and run the project:
     npm run start:dev
     ```
 
-Replace placeholders like `your_username`, `your_password`, `your_jwt_password`, and `your_jwt_secret` with your actual values.
-
 ## Purpose
 
 The backend provides GraphQL endpoints for various player-related operations. The primary functionalities include:
@@ -42,6 +40,8 @@ DATABASE_URL="mongodb+srv://your_username:your_password@cluster0.kq8ginl.mongodb
 JWT_PASSWORD=your_jwt_password
 JWT_SECRET=your_jwt_secret
 ```
+
+Replace placeholders like `your_username`, `your_password`, `your_jwt_password`, and `your_jwt_secret` with your actual values.
 
 ## Authentication
 
