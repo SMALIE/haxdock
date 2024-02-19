@@ -51,3 +51,22 @@ The HaxBall Headless Host API, documented [here](https://github.com/haxball/haxb
 
 The project goal, therefore, encompasses not only the ease of managing and expanding rooms through the "sharedable" concept but also a commitment to code safety and quality by implementing strong type safety at all stages of application development.
 
+## ⚙️ Configuration of GitHub Actions Secrets
+
+To configure the GitHub Actions secrets for your project, follow these steps:
+
+1. **SSH User (secrets.SSH_USER):**
+   - This should be the username of the VPS (Virtual Private Server) you are using to host your HaxDock application.
+
+2. **SSH Host (secrets.SSH_HOST):**
+   - Use the IP address of your VPS as the value for this secret. This is the host where your application will be deployed.
+
+3. **SSH Key (secrets.SSH_KEY):**
+   - This secret requires the private key for SSH access to your VPS. Follow these steps to set it up:
+     - Generate an SSH key pair on your local machine if you haven't already using the following command:
+       ```
+       ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+       ```
+     - Copy the contents of the public key (by default, it's stored in `~/.ssh/id_rsa.pub`).
+     - Add the public key to the `~/.ssh/authorized_keys` file on your VPS to enable authentication.
+     - Copy the private key (by default, it's stored in `~/.ssh/id_rsa`) and add it as the value for the `secrets.SSH_KEY` secret in your GitHub repository.
