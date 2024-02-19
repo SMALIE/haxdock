@@ -22,7 +22,7 @@ Follow these steps to set up and run the project:
 
 ## Functionality
 
-The backend provides GraphQL endpoints for various player-related operations. The primary functionalities include:
+The backend facilitates various player-related operations through GraphQL queries. The primary functionalities include:
 
 - User authentication (`authorization` query)
 - Player creation and update (`upsertPlayer` mutation)
@@ -45,7 +45,7 @@ Replace placeholders like `your_username`, `your_password`, `your_jwt_password`,
 
 ## Authentication
 
-Authentication is required for certain mutations and queries. The `AuthGuard` is used to ensure that only authenticated users can access protected endpoints.
+Authentication is required for certain mutations and queries. The `AuthGuard` is used to ensure that only authenticated users can access protected queries.
 
 ## Scripts
 
