@@ -86,6 +86,11 @@ export default {
 }
 ```
 
+## Github Workflow Secrets
+
+- `DOCKER_HUB_USER`
+- `DOCKER_HUB_TOKEN`
+
 ## Scripts
 
 - `codegen`: Script is used to generate GraphQL types (gql types) based on the provided configuration file (`codegen.yaml`).
