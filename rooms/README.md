@@ -42,6 +42,50 @@ The project utilizes GitHub Actions as a workflow to automate the deployment pro
 
 The deployment process involves pulling the Docker image from the registry and starting the container. The "manager" component handles CLI commands and initiates the execution of the room manager script to create and manage HaxBall rooms.
 
+## Room Configuration
+
+The room configuration is a crucial aspect of the HaxBall Rooms project, defining various parameters for the creation and management of custom game rooms.
+The configuration file exports an object that contains two main sections: `source` and `container`. These sections provide information about the HaxBall room and the Docker container used to host it.
+
+### `source` Section
+
+The `source` section defines parameters related to the HaxBall room itself:
+
+- **id:** An identifier for the room, often referred to as `RS` in this context.
+  
+- **name:** Descriptive name of the room, such as 'REAL_SOCCER', also source code in rooms directory should have exact name `./rooms/REAL_SOCCER/` in this case.
+
+- **stadium:** Specifies the map for the room, identified by the filename within the `./sharedable/assets/maps/` directory.
+
+### `container` Section
+
+The `container` section contains details about the Docker container hosting the HaxBall room:
+
+- **name:** Name assigned to the Docker container, e.g., 'REAL_SOCCER'.
+
+- **host:** IP address of the VPS where the Docker container manager is running. The manager is responsible for creating the Docker container for the HaxBall room.
+
+### Example Configuration
+
+```javascript
+export default {
+  source: {
+    id: 'RS',
+    name: 'REAL_SOCCER',
+    stadium: 'REAL_SOCCER',
+  },
+
+  container: {
+    name: 'REAL_SOCCER',
+    host: '192.158.1.38',
+  }
+
+  room: {
+    // haxball api configuration
+  }
+}
+```
+
 ## Scripts
 
 - `codegen`: Script is used to generate GraphQL types (gql types) based on the provided configuration file (`codegen.yaml`).
