@@ -20,7 +20,7 @@ Follow these steps to set up and run the project:
     npm run start:dev
     ```
 
-## Purpose
+## Functionality
 
 The backend provides GraphQL endpoints for various player-related operations. The primary functionalities include:
 
