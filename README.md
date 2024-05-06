@@ -4,7 +4,7 @@
 
 ## 💻 Workflow
 
-![Schema](https://media.discordapp.net/attachments/1159211106087215204/1207000323785490473/image.png?ex=65de0da6&is=65cb98a6&hm=dd888a0b504c51d04930cd0ecb1af24bdadeec674a5070872c59eb2fba968161&=&format=webp&quality=lossless&width=1810&height=888)
+![Schema](https://i.imgur.com/1vW2zNX.png)
 
 ## 📰 Structure
 
