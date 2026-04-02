@@ -4,8 +4,7 @@
 
 ## 💻 Workflow
 
-![Schema](https://i.imgur.com/1vW2zNX.png)
-
+![Schema](diagram.png)
 ## 📰 Structure
 
 - [room-manager](https://github.com/SMALIE/haxdock/tree/main/manager#readme) - Manages room containers
