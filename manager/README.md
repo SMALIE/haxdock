@@ -4,7 +4,7 @@
 
 This documentation provides information about the Room Manager, a component responsible for managing HaxBall game rooms through Docker containers. The Room Manager handles the creation of Docker containers hosting HaxBall rooms based on the provided room configuration.
 
-![Manager diagram](https://media.discordapp.net/attachments/1159211106087215204/1208556007114932284/manager.png?ex=65e3b67d&is=65d1417d&hm=d12d25416839342bde2ba4683b0baac3a2be7713b1cee669a685422d5f44d603&=&format=webp&quality=lossless&width=1826&height=888)
+![Manager diagram](../docs/architecture-manager.jpg)
 
 ### Environment Variables
 

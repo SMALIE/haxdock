@@ -4,7 +4,7 @@
 
 This is the documentation for the "website," a React-based web application designed to display player rankings based on specific categories such as goals, points, wins, and losses. The project includes a visual representation of the website's structure in the form of a diagram. Please refer to the diagram below:
 
-![Website Diagram](https://media.discordapp.net/attachments/1159211106087215204/1208556007459131402/website.png?ex=65e3b67e&is=65d1417e&hm=1d1d86c275cd5e8f223a9a7fd2f66a42516d6b09e74b718d12a06595e64bcf99&=&format=webp&quality=lossless&width=1826&height=888)
+![Website Diagram](../docs/architecture-website.jpg)
 
 ## Getting Started
 

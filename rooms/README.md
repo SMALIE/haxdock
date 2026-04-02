@@ -4,7 +4,7 @@
 
 This documentation provides information about the HaxBall Rooms project, which focuses on creating and managing custom game rooms on the HaxBall platform. In this context, a "room" refers to a server hosted on HaxBall, utilizing the HaxBall Headless Host API to interact programmatically.
 
-![Website Diagram](https://cdn.discordapp.com/attachments/1097966927630061658/1209133113725165568/Bez_nazwy-1.png?ex=65e5cff6&is=65d35af6&hm=8624b7423f20e0eaacc4835918e9de837ee24b1eb6fefe54a18fde294a19298a&)
+![Rooms Diagram](../docs/architecture-room.jpg)
 
 ## Getting Started
 

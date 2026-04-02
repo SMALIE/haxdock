@@ -4,7 +4,7 @@
 
 This documentation provides information about the backend for the HaxDock project. The backend is implemented using NestJS, MongoDB as the database, Prisma for data access, and GraphQL for API queries and mutations. The purpose of the backend is to handle player-related operations, including authentication, player updates, and retrieving player data.
 
-![Server Diagram](https://media.discordapp.net/attachments/1159211106087215204/1208556007777767534/server.png?ex=65e3b67e&is=65d1417e&hm=b68866b9de828cd8714d47f6af155808e3da59e61869965fa8870b412f8c7861&=&format=webp&quality=lossless&width=1826&height=888)
+![Server Diagram](../docs/architecture-server.jpg)
 
 ## Getting Started
 
